@@ -530,6 +530,35 @@
     ]
   }
   {
+    'begin': '((\\\\)note)(?:(<).*(>))?(?:(\\[).*(\\]))?(\\{)'
+    'captures':
+      '1':
+        'name': 'support.function.textit.latex'
+      '2':
+        'name': 'punctuation.definition.function.latex'
+      '3':
+        'name': 'punctuation.definition.overlay.optional.begin.latex'
+      '4':
+        'name': 'punctuation.definition.overlay.optional.end.latex'
+      '5':
+        'name': 'punctuation.definition.arguments.optional.begin.latex'
+      '6':
+        'name': 'punctuation.definition.arguments.optional.end.latex'
+      '7':
+        'name': 'punctuation.definition.note.begin.latex'
+    'contentName': 'punctuation.definition.comment.tex'
+    'end': '\\}'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.note.end.latex'
+    'name': 'meta.function.note.latex'
+    'patterns': [
+      {
+        'include': '$base'
+      }
+    ]
+  }
+  {
     'begin': '((\\\\)textbf)(\\{)'
     'captures':
       '1':
